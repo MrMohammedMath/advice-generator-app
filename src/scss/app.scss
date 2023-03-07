@@ -1,0 +1,13 @@
+@import 'advice';
+@import 'globale';
+
+
+main{
+    height: 100vh;
+    background-color: var(--bg-color1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -1,0 +1,77 @@
+@import 'globale';
+
+.advice {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+
+    text-align: center;
+    font-family: var(--font-family);
+    background-color: var(--bg-color2);
+    border-radius: 10px;
+    width: 340px;
+    min-height: 300px;
+
+    padding: 40px 20px 60px 20px;
+
+    @include desktop {
+        width: 530px;
+
+        box-shadow: 2px 2px;
+        box-shadow: 17px 17px 37px 10px rgba(0 0 0 / 0.1);
+
+        padding: 40px 40px 60px 40px;
+    }
+
+    &__id {
+        color: var(--color2);
+        font-size: 0.775rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+        @include desktop {
+            font-size: 0.875rem;
+        }
+    }
+
+    &__text {
+        color: var(--color1);
+        font-size: 1.5rem;
+        width: 100%;
+        margin: 25px;
+
+        @include desktop {
+            font-size: 1.7rem;
+            margin: 40px;
+        }
+    }
+
+    &__divider {
+        width: 100%;
+    }
+
+    &__btn {
+        position: absolute;
+        bottom: -32.5px;
+
+        background-color: var(--color2);
+        border: none;
+        border-radius: 50%;
+        outline: none;
+        --radius: 65px;
+        width: var(--radius);
+        height: var(--radius);
+
+        cursor: pointer;
+        transition: background-color .5s;
+
+        &:hover {
+            background-color: var(--color1);
+        }
+
+        &__icon {}
+    }
+}
